@@ -1,0 +1,3 @@
+today is Tuesday!
+Java Programming Language
+Cydeo School
