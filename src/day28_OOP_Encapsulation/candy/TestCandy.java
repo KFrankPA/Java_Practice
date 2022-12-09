@@ -7,7 +7,7 @@ public class TestCandy {
         Candy candy1 = new Candy("MMS", 10, 0, true);
         Candy candy2 = new Candy("Mars", 15, 2.99, false);
 
-         System.out.println(candy1);
+        System.out.println(candy1);
         System.out.println(candy2);
 
         CandyFactory factory1 = new CandyFactory("Hershey");
@@ -15,13 +15,16 @@ public class TestCandy {
         factory1.addCandy(candy1);
         factory1.addCandy(candy2);
 
-     Candy[] can1 = {candy1, candy2};
-     factory1.addCandies(can1);
+        Candy[] can1 = {candy1, candy2};
+        factory1.addCandies(can1);
 
-    factory2.addCandies(can1);
+        factory2.addCandies(can1);
+        System.out.println(factory2);
 
+        factory2.candies.removeIf(p-> p.getPrice() == 0);
+        System.out.println(factory2);
 
-       // System.out.println(factory1);
+        // System.out.println(factory1);
 
     }
 
