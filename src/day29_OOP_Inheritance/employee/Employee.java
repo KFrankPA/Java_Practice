@@ -1,5 +1,7 @@
 package day29_OOP_Inheritance.employee;
 
+import com.sun.source.doctree.StartElementTree;
+
 public class Employee {
 
     private String name;
@@ -11,12 +13,12 @@ public class Employee {
 
 
     public void setInfo(String name, char gender, int age, String ID, String jobTitle, double salary) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.ID = ID;
-        this.jobTitle = jobTitle;
-        this.salary = salary;
+       setName(name);
+       setGender(gender);
+       setAge(age);
+       setID(ID);
+       setJobTitle(jobTitle);
+       setSalary(salary);
 
     }
 
@@ -31,7 +33,7 @@ public class Employee {
         return gender;
     }
     public void setGender(char gender){
-        if(gender != 'F' || gender != 'M'){
+        if(!(gender == 'F' || gender == 'M')){
             System.err.println("Invalid gender entry: " +  gender);
             System.exit(1);
         }
@@ -76,6 +78,17 @@ public class Employee {
 
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
+    }
+
+    public String toString() {
+        return  getClass().getSimpleName() + "{" +
+                "name='" + name + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                ", ID='" + ID + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }
 /*

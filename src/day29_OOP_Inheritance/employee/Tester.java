@@ -1,19 +1,7 @@
 package day29_OOP_Inheritance.employee;
-
-public class Tester {
+public class Tester extends Employee {
+    public void testing() {
+        System.out.println(getName() + " " + getJobTitle() + " is testing");
+    }
 
 }
-
-
-
-
-
-
-   /* public void setProgrammingLanguage(String programmingLanguage){
-        if(!(programmingLanguage.equalsIgnoreCase("Java") || programmingLanguage.equalsIgnoreCase("Javascript") || programmingLanguage.equalsIgnoreCase( "Python") || programmingLanguage.equalsIgnoreCase("Ruby") || programmingLanguage.equalsIgnoreCase("C#"))){
-            System.err.println("Invalid programming Language: " + programmingLanguage);
-            System.exit(1);
-        }
-        this.programmingLanguage = programmingLanguage;
-}
-*/
