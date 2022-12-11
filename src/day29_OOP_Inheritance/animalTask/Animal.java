@@ -14,7 +14,16 @@ public class Animal {
         isAnimal = true;
     }
 
-    public void setInfo(String name, String breed, char gender, int age, String size, String color) {
+    public Animal(String name, String breed, char gender, int age, String size, String color) {
+      setName(name);
+      setBreed(breed);
+      setGender(gender);
+      setAge(age);
+      setSize(size);
+      setColor(color);
+    }
+
+    /* public void setInfo(String name, String breed, char gender, int age, String size, String color) {
         setName(name);
         setBreed(breed);
         setGender(gender);
@@ -22,7 +31,7 @@ public class Animal {
         setSize(size);
         setColor(color);
     }
-
+*/
 
     public void eat() {
         System.out.println(name + " is eating");

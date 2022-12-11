@@ -1,4 +1,4 @@
-package day30_OOP_inheritance;
+package day30_OOP_inheritance.phones;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,11 +21,11 @@ public class Phone {
     }
 
     public void setBrand(String brand) {
-        String[] brands ={"Nokia", "Samsung", "IPhone"};
+        String[] brands ={"Nokia", "Samsung", "Apple"};
         if(Arrays.asList(brands).contains(brand)) {
             this.brand = brand;
             }else{
-            System.err.println("Imvalid brand name " + brand);
+            System.err.println("Invalid brand name " + brand);
             System.exit(1);
         }
     }
@@ -72,9 +72,11 @@ public class Phone {
         this.price = price;
     }
 
+    public void call(long phoneNumber){
+        System.out.println(getBrand() + " is calling " + phoneNumber);
+    }
+
     public String toString() {
-
-
         return getClass().getSimpleName() +  "{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
