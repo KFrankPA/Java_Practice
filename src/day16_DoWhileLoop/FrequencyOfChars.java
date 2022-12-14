@@ -3,7 +3,7 @@ package day16_DoWhileLoop;
 public class FrequencyOfChars {
     public static void main(String[] args) {
 
-        String str = "abaaccddea";
+        String str = "aaaaabbbbbaaccddea";
         String result = "";
 
 
