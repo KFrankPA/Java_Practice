@@ -7,6 +7,6 @@ public interface Playable{
 
     // public abstract void play(); public abstract keywords are optional
 
-    void play(); // abstract method
+   void play(); // abstract method
 
 }

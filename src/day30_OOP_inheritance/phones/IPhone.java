@@ -1,8 +1,8 @@
 package day30_OOP_inheritance.phones;
 
-public class Iphone extends Phone {
+public class IPhone extends Phone {
 
-    public Iphone(String model, String size, String color, double price){
+    public IPhone(String model, String size, String color, double price){
         super("Apple", model, size, color, price);
     }
 

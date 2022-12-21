@@ -76,6 +76,10 @@ public class Phone {
         System.out.println(getBrand() + " is calling " + phoneNumber);
     }
 
+    public void text(long phoneNumber){
+        System.out.println(getBrand() + " " + getModel() + " is calling " + phoneNumber);
+    }
+
     public String toString() {
         return getClass().getSimpleName() +  "{" +
                 "brand='" + brand + '\'' +

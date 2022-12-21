@@ -8,17 +8,17 @@ public class FrequencyOfChars {
 
 
         for (int i = 0; i <str.length(); i++) {
-            char ch = str.charAt(i);
+           // char ch = str.charAt(i);
             int frequency = 0;
             for (int j = 0; j < str.length(); j++) {
-                if (str.charAt(j) == ch) {
+                if (str.charAt(j) == str.charAt(i)) {
                     frequency++;
                 }
             }
-            if (result.contains("" + ch)) {
+            if (result.contains("" + str.charAt(i))) {
                 continue;
             } else {
-                result += ch + "" + frequency + " ";
+                result += str.charAt(i) + "" + frequency + " ";
             }
         }
         System.out.println(result);

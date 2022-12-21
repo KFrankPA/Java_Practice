@@ -10,7 +10,6 @@ public class UniqueElementOfArrayList {
         ArrayList<Integer> nums = new ArrayList<>();
         nums.addAll(Arrays.asList(1, 1, 2, 3, 3, 4, 5, 5));
 
-
             nums.removeIf(p-> Collections.frequency(nums, p)>1);
         System.out.println(nums);
 

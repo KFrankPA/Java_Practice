@@ -1,9 +1,9 @@
 package day34_Absrtaction_Continue.car;
 
-import java.util.ArrayList;
-
 public class TestCarObjects {
     public static void main(String[] args) {
+
+
 
        // Car car1 = new Car("X6", "Red", 2020, 45000);
 
@@ -27,9 +27,11 @@ public class TestCarObjects {
         honda1.stop();
         audi1.stop();
         tesla1.stop();
+        System.out.println("=============================");
+
+        tesla1.canAutoPark();
 
 
-char [] arr = {'a', 'v','b'};
 
     }
 

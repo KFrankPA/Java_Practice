@@ -11,11 +11,12 @@ public class ArrayArrayListConvertion {
         list.addAll(Arrays.asList(arr1));
         System.out.println(list);
 
+
         System.out.println("=======================");
         ArrayList<String> list2 = new ArrayList<>(Arrays.asList("Java", "Python", "C#"));
         String[] languages = list2.toArray(new String[list2.size()]); // new String[0]
         System.out.println("languages = " + Arrays.toString(languages));
-
+         //(new String[list2.size()])
 
 
 

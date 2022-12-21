@@ -57,6 +57,7 @@ public abstract class Car { // meant to be inherited, van not be in instantiated
     protected final void stop(){
         System.out.println("Press the break to stop " + make + " " + model);
     }
+
 protected abstract void start(); // meant to be overriden
 
     @Override

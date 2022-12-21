@@ -4,7 +4,7 @@ public class TestPhoneObjects {
     public static void main(String[] args) {
 
 
-        Iphone iphone1 = new Iphone("14Pro", "Large", "White", 1199);
+        IPhone iphone1 = new IPhone("14Pro", "Large", "White", 1199);
 
         Samsung samsung1 = new Samsung("Galaxy S22", "Medium", "White", 1100);
 

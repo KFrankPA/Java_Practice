@@ -2,7 +2,7 @@ package day34_Absrtaction_Continue.animal;
 
 public interface Flyable {
 
-    boolean canFly = true;
+  public static final boolean canFly = true;
 
     void fly();
 

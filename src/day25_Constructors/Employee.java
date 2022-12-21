@@ -2,7 +2,7 @@ package day25_Constructors;
 
 import java.time.LocalDate;
 
-public class Employee {
+public class  Employee {
 
     public String name;
     public int age;

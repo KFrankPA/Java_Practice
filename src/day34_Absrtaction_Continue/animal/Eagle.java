@@ -19,6 +19,6 @@ public class Eagle extends Animal implements Flyable, WildAnimal{
 
     @Override
     public void hunt() {
-
     }
+
 }

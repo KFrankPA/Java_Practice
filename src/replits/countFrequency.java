@@ -43,5 +43,4 @@ public class countFrequency {
         System.out.println(numberOfHeads);
     }
 
-
 }
