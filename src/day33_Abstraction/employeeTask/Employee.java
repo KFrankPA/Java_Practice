@@ -1,8 +1,6 @@
 package day33_Abstraction.employeeTask;
 
-import java.time.LocalDate;
-
-public abstract class EmployeeTask {
+public abstract class Employee {
     private String name;
     private int age;
     private char gender;
@@ -10,7 +8,7 @@ public abstract class EmployeeTask {
     private double salary;
 
 
-    public EmployeeTask(String name, int age, char gender, String jobTitle, double salary) {
+    public Employee(String name, int age, char gender, String jobTitle, double salary) {
         setName(name);
         setAge(age);
         setGender(gender);
@@ -61,6 +59,13 @@ public abstract class EmployeeTask {
 public abstract void work();
 
 
-
-
+    public String toString() {
+        return getClass().getSimpleName() +  "{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
