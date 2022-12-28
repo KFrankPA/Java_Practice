@@ -2,6 +2,9 @@ package day36_Polymorphism_practice;
 
 import day34_Absrtaction_Continue.car.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Car {
 
     public static void main(String[] args) {
@@ -41,6 +44,47 @@ public class Car {
 
             }
         }
+
+        double highPrice = cars[0].getPrice();
+        double lowPrice = cars[1].getPrice();
+
+        for (int i = 1; i < cars.length; i++) {
+            if(cars[i].getPrice() > cars[i-1].getPrice()){
+                highPrice = cars[i].getPrice();
+            }
+        }
+        for (day34_Absrtaction_Continue.car.Car each : cars) {
+            if(highPrice == each.getPrice()){
+                System.out.println(each);
+            }
+            
+        }
+        for (int i = 1; i < cars.length; i++) {
+            if(cars[i].getPrice() < cars[i-1].getPrice()){
+                lowPrice = cars[i].getPrice();
+            }
+        }
+        for (day34_Absrtaction_Continue.car.Car each : cars) {
+            if(lowPrice == each.getPrice()){
+                System.out.println(each);
+                break;
+            }
+
+        }
+
+        ArrayList<Tesla> teslaCars = new ArrayList<>();
+        
+
+        System.out.println("================================");
+
+        for (day34_Absrtaction_Continue.car.Car each : cars) {
+            if(each instanceof Tesla){
+                teslaCars.add((Tesla) each);
+            }
+
+        }
+        System.out.println(teslaCars);
+
 
     }
 }
