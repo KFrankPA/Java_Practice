@@ -3,22 +3,22 @@ package day18_GarbageCollection;
 public class PizzaObjects {
 
     public char size; // instance variable (means multiple copies can be made)
-    public int numberOfChesseTopping, numberOfPepperoniTopping;
+    public int numberOfCheeseTopping, numberOfPepperoniTopping;
 
     public double calcCost(){
         double totalPrice = 0;
          switch (size){
              case 'S':
              case 's':
-                 totalPrice = 10 + 2 * (numberOfChesseTopping + numberOfPepperoniTopping);
+                 totalPrice = 10 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
                  break;
              case 'M':
              case 'm':
-                 totalPrice = 12 + 2 * (numberOfChesseTopping + numberOfPepperoniTopping);
+                 totalPrice = 12 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
                  break;
              case 'L':
              case 'l':
-                 totalPrice = 14 + 2 * (numberOfChesseTopping + numberOfPepperoniTopping);
+                 totalPrice = 14 + 2 * (numberOfCheeseTopping + numberOfPepperoniTopping);
                  break;
              default:
                  System.err.println("Invalid size: " + size);
@@ -31,7 +31,7 @@ public class PizzaObjects {
 
         this.size = size;
         this.numberOfPepperoniTopping = numberOfPepperoniTopping;
-        this.numberOfChesseTopping = numberOfChesseTopping;
+        this.numberOfCheeseTopping = numberOfChesseTopping;
 
     }
 
@@ -39,7 +39,7 @@ public class PizzaObjects {
     public String toString() {
         return "PizzaObjects{" +
                 "size=" + size +
-                ", numberOfChesseTopping=" + numberOfChesseTopping +
+                ", numberOfChesseTopping=" + numberOfCheeseTopping +
                 ", numberOfPepperoniTopping=" + numberOfPepperoniTopping +
                 ", total price= " + calcCost() +
 
