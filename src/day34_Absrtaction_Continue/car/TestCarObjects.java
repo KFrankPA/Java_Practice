@@ -31,7 +31,7 @@ public class TestCarObjects {
 
         tesla1.canAutoPark();
 
-
+Car car = new Tesla("weh", "hksd",1555,200);
 
     }
 
