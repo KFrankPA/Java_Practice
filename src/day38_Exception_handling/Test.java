@@ -23,7 +23,7 @@ public class Test {
 
         //  throw new RuntimeException("Something went wrong");
 
-        throw new BreakTimeException("Time to go home");
+        throw new BreakTimeException();
 
         //   throw new BreakTimeException();
 

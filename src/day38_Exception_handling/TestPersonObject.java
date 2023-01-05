@@ -9,13 +9,12 @@ public class TestPersonObject {
 
         System.out.println(person1);
 
-try {
-    person1.setAge(-25);
-}catch (RuntimeException e){
-    e.printStackTrace();
-
-}
-
+        try {
+            person1.setAge(-25);
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Test is complete");
         System.out.println(person1);
 
     }
