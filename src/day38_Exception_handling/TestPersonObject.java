@@ -12,7 +12,8 @@ public class TestPersonObject {
         try {
             person1.setAge(-25);
         } catch (RuntimeException e) {
-            e.printStackTrace();
+           e.printStackTrace();
+           // e.getMessage();
         }
         System.out.println("Test is complete");
         System.out.println(person1);

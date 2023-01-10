@@ -2,6 +2,8 @@ package day39_Collections;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Stack;
+import java.util.Vector;
 
 public class ListDemo {
     public static void main(String[] args) {
@@ -28,8 +30,31 @@ public class ListDemo {
 
         System.out.println("=======================================");
 
+        Vector<Integer> vector = new Vector<>();
+
+        vector.add(100);
+        vector.add(200);
+        vector.add(300);
+        vector.add(400);
+        vector.add(500);
 
 
+        System.out.println("=======================================");
+
+        Stack <Integer> stack = new Stack<>();
+
+        stack.add(100);
+        stack.add(200);
+        stack.add(300);
+        System.out.println(stack);
+
+        int a = stack.pop();
+        System.out.println(a);
+        System.out.println(stack);
+
+        stack.pop();
+
+        System.out.println(stack);
 
 
     }
