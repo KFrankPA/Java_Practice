@@ -7,15 +7,32 @@ public class Test3 {
 
         String s = "aa2aa3";
 
-        String[] nums2 = s.split("");
-        String result = "";
+        String[][] arr = {{"A", "B", "C"}, {"D", "E"}};
 
-        for (String each2 : nums2) {
-            if (Character.isDigit(Integer.parseInt(each2))) {
-                result += each2;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                System.out.println(arr[i][j]);
+                if(arr[i][j].equals("B")){
+                    break;
+                }
+
             }
+
         }
-        System.out.println(result);
+
+        int [] num1 = new int [3];
+        int [] num2 = {2,4,6,8,10};
+        num1=num2;
+
+        for (int i = 0; i < num1.length; i++) {
+            System.out.print(num1[i]);
+
+        }
+        System.out.println();
+int x = 100;
+        int a = x++;
+        System.out.println(a);
+
         }
     }
 

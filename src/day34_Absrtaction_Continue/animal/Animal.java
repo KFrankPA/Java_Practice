@@ -64,6 +64,7 @@ public abstract class Animal {
             System.out.println(name + " drinks water");
         }
         public abstract void eat();
+    public static void eat2(){};
         public void sleep(){
             System.out.println(name + " is sleeping");
         }

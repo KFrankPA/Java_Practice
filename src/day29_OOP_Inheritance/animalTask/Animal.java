@@ -45,6 +45,7 @@ public class Animal {
         System.out.println(name + " is sleeping");
     }
 
+
     public String getName() {
         return name;
     }

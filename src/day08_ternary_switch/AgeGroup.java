@@ -3,13 +3,13 @@ package day08_ternary_switch;
 public class AgeGroup {
     public static void main(String[] args) {
 
-        int age =5;
+        int age = 5;
         String group = " Teenager";
 
-        String word = (age>=1 && age<= 100)?
-                (age>= 1 && age <= 2)? "infant" : (age >= 3 && age <=5)? " Toddler"
-                : (age >= 6 && age<= 9)? " Kid" : (age>=10 && age<=12)? " Pre- teen" : (age >=13 && age <= 17)? " Teenager"
-                : ( age >= 18 && age <= 20)? " Young Adult" : (age>=21 && age<=39)? " Adult": " Middle aged" : " Invalid number";
+        String word = (age >= 1 && age <= 100) ?
+                (age >= 1 && age <= 2) ? "infant" : (age >= 3 && age <= 5) ? " Toddler"
+                        : (age >= 6 && age <= 9) ? " Kid" : (age >= 10 && age <= 12) ? " Pre- teen" : (age >= 13 && age <= 17) ? " Teenager"
+                        : (age >= 18 && age <= 20) ? " Young Adult" : (age >= 21 && age <= 39) ? " Adult" : " Middle aged" : " Invalid number";
         System.out.println(word);
 
 

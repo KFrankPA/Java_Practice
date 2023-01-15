@@ -1,5 +1,7 @@
 package oca;
 
+import java.util.Arrays;
+
 public class Oca {
     public static void main(String[] args) {
 
@@ -13,6 +15,13 @@ public class Oca {
             }
 
         }
+        System.out.println();
+        int nums[] = new int [1];
+        nums[0] = 1;
+        nums = new int [2];
+        nums[1] = 5;
+        System.out.println(Arrays.toString(nums));
+
 
     }
 }

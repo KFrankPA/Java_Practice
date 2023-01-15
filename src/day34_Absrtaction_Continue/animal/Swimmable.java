@@ -4,7 +4,7 @@ public interface Swimmable {
 
     boolean canSwim = true;
 
-    void swim();
+     void swim();
 
 
 }

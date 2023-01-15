@@ -10,7 +10,8 @@ public class BiggerNum {
                 n2=2,
                 n3=3;
 
-        String biggest= (n1>n2 && n1 > n3)? n1 + " Biggest" : (n2>n1 && n2>n3 )? n2 + " Biggest" : ( n3 > n1 && n3> n2)?
+        String biggest ;
+        biggest= (n1>n2 && n1 > n3)? n1 + " Biggest" : (n2>n1 && n2>n3 )? n2 + " Biggest" : ( n3 > n1 && n3> n2)?
                 n3 + " Biggest" : " invalid";
         System.out.println(biggest);
 
