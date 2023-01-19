@@ -1,6 +1,6 @@
 package extra;
 
-public enum Day {
+public enum Day_ENUM {
 
 
     MONDAY,
