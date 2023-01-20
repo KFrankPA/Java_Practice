@@ -6,15 +6,13 @@ public class vehicle {
 
     static int a = 0;
 int g =0;
-public void change(){
-    while(g < 5){
-g++;
-a ++;
-
-    }
+final static public void change(){
 
 
     }
+
+
+
 
 
     public void start() {
