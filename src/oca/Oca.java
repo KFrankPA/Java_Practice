@@ -23,5 +23,20 @@ public class Oca {
         System.out.println(Arrays.toString(nums));
 
 
+        System.out.println("=====================");
+        int num [] = {1,1,2,5,5};
+        int num2 [] = new int[4];
+
+        num2 = num;
+        for (int i = 0; i < num2.length; i++) {
+            System.out.print(num[i]);
+        }
+        System.out.println();
+        System.out.println(Arrays.toString(num));
+
+        int[] numb = new int[5];
+        numb[0] = 10;
+
     }
+
 }
